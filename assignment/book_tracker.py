@@ -21,7 +21,7 @@ def add_book():
     Create a variable called hours that calls the function estimate_reading_time
     """
     # your code here
-    title = input('Book title: ')
+    title = input('Book title: ').title()
     author = input('Author: ')
     pages = int(input('Page count: '))
     hours = estimate_reading_time(pages)
