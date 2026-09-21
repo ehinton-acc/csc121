@@ -1,1 +1,8 @@
-# Refer to this module's readme
+words = {"PAIR": 4, "HAIR": 4, "CHAIR": 5, "GRAPHIC": 7}
+def main():
+    print("Welcome to Spelling Bee!")
+    print("Here are yesterday's answers:")
+
+    for word, points in words.items():
+        print(f"{word} was worth {points} points.")
+main()
