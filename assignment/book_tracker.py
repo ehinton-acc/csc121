@@ -51,9 +51,6 @@ def show_menu():
     return user_input
 
 def main():
-    show_menu()
-
-if __name__ == "__main__":
     library = []
     while True:
         user_input = show_menu()
@@ -66,3 +63,6 @@ if __name__ == "__main__":
             break
         else:
             print("Sorry, that option isn't available.") 
+
+if __name__ == "__main__":
+    main()
