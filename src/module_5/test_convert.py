@@ -1,5 +1,5 @@
 import pytest
-from convert import convert
+from convert1 import convert
 
 
 def test_int_conversion():
