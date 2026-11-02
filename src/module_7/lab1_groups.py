@@ -1,14 +1,14 @@
 import re
 
 def main():
-    locations = {"+1": "United States and Canada", "+62": "Indonesia", "+505": "Nicaragua"}
+    locs = {"+1": "United States and Canada", "+62": "Indonesia", "+505": "Nicaragua"}
     pattern = r"(?P<country_code>\+\d{1,3}) \d{3}-\d{3}-\d{4}"
-    number = input("Number: ")
+    num = input("Number: ")
 
-    match = re.search(pattern, number)
+    match = re.search(pattern, num)
     if match:
-        country_code = match.group("country_code")
-        print(locations[country_code])
+        cc = match.group("country_code")
+        print(locs[cc])
     else:
         print("Unknown")
 
