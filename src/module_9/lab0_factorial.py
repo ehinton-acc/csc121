@@ -23,7 +23,7 @@
 def factorial(n: int) -> int:
     """Recursive function that calculates the factorial of an integer.
     Args:
-        n: Number to find the factorial value of.
+        n: Number for which the factorial will be calculated.
     
     Returns:
         The value of n factorial.
